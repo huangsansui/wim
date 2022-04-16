@@ -59,7 +59,7 @@ public class WimClient {
                         ch.pipeline().addLast(new HeartBeatTimerHandler());
                         ch.pipeline().addLast(new PacketEncoderHandler());
 
-//                        ch.pipeline().addLast(new FirstClientHandle());
+                        ch.pipeline().addLast(new FirstClientHandle());
                     }
                 });
 

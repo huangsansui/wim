@@ -49,7 +49,7 @@ public class WimServer {
                         ch.pipeline().addLast(new MessageRequestHandler());
                         ch.pipeline().addLast(new HeartBeatRequestHandler());
                         ch.pipeline().addLast(new PacketEncoderHandler());
-//                        ch.pipeline().addLast(new FirstServerHandler());
+                        ch.pipeline().addLast(new FirstServerHandler());
                     }
                 });
 

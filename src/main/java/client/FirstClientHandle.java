@@ -17,7 +17,7 @@ public class FirstClientHandle extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-//        System.out.println(new Date() + ": 客户端写出数据");
+        System.out.println(new Date() + ": 客户端写出数据");
         for (int i = 0; i < 100; i++) {
             ByteBuf buffer = getByteBuf(ctx);
             ctx.channel().writeAndFlush(buffer);
